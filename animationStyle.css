@@ -1,0 +1,26 @@
+@keyframes door-left {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: rotate(90deg) translateX(0); /* Open to 90 degrees */
+  }
+}
+
+@keyframes door-right {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: rotate(-90deg) translateX(0); /* Open to 90 degrees */
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(600px); /* Open to 90 degrees */
+  }
+}

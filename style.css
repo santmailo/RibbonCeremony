@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("campus.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ribbon {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.ribbon-left,
+.ribbon-right {
+  width: 47%;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+  transform-origin: left center; /* Pivot around the left edge for ribbon-left */
+}
+
+.ribbon-left {
+  left: 0;
+  animation: door-left 2s forwards; /* Apply animation with forwards to retain end state */
+}
+
+.ribbon-right {
+  width: 45%;
+  transform-origin: right center; /* Pivot around the right edge for ribbon-right */
+  right: 0;
+  animation: door-right 2s forwards; /* Apply animation with forwards to retain end state */
+}
+
+.ribbon-img {
+  margin-top: 70px;
+  margin-left: 30px;
+  width: 30%;
+  height: 300px;
+  z-index: 100;
+  animation: move 2s forwards;
+}
+
+button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
