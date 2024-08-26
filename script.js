@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       const redirectUrl = "https://cosmos.video/v/ivni-9ziy-t681/office";
 
-      window.location.href = redirectUrl;
+      window.open(redirectUrl, "_blank"); // Opens the URL in a new tab or window
     }, 8000);
 
     // Create a new <link> element
