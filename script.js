@@ -28,7 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 6000);
     setTimeout(() => {
       celebrate();
-    }, 7000);
+    }, 4000);
+    setTimeout(() => {
+      const redirectUrl = "https://cosmos.video/v/ivni-9ziy-t681/office";
+
+      window.location.href = redirectUrl;
+    }, 8000);
+
     // Create a new <link> element
     const link = document.createElement("link");
     link.rel = "stylesheet";
